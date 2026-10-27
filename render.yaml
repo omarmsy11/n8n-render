@@ -29,6 +29,8 @@ services:
         fromDatabase:
           name: n8nDB
           property: password
+      - key: N8N_ENCRYPTION_KEY
+        sync: false # set in the Render dashboard, never in this repo
     disk:
       name: n8nDisk
       mountPath: /home/node/.n8n
